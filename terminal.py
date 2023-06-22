@@ -4,7 +4,7 @@ import random
 
 l = 0
 lock = 0
-print("터미널 by 벌집이 v0.02")
+print("터미널 by 벌집이 v0.03")
 
 while True:
     on = 1
@@ -85,8 +85,7 @@ while True:
             print("잠금이 되어있어 작업을 실행할수 없습니다.")
         else:
             print("""
-                작업 '잠금'추가: 실행시 입력받는 창이 뜨고 숫자를 입력하면 해당 숫자로 비밀번호가 설정되면서 잠금됨
-                작업 '잠금해제'추가: 실행시 입력받는 창이 뜨고 '잠금'작업에서 입력했던 비밀번호와 숫자가 일치하면 잠금해제
+                 작업 '잠금'실행시 비밀번호 유출 방지
               """)
     elif a == "작업목록":
         if lock == 1:
@@ -115,12 +114,12 @@ while True:
             try:
                 l = int(input("비밀번호가 설정되지 않았습니다.비밀번호를 설정해주세요 : "))
                 lock = 1
-                print("잠금되었습니다.")
+                print("------------------------\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n잠금되었습니다.")
             except ValueError:
                 print("오류가 발생했습니다.공백이거나 문자열일수 없습니다.")
         else:
             lock = 1
-            print("잠금되었습니다.")
+            print("------------------------\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n잠금되었습니다.")
     elif a == "잠금해제":
         if lock:
             try:
